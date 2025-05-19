@@ -4,8 +4,8 @@
   enable = true;
   delta = import ./delta.nix { inherit pkgs; };
 
-  userName = "Jarad Dingman";
-  userEmail = "28451409+MisterBianco@users.noreply.github.com";
+  userName = "jarad-dingman";
+  userEmail = "jarad.dingman@wgu.edu";
 
   extraConfig = {
     # Sign all commits using ssh key
