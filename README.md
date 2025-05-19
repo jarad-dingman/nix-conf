@@ -13,10 +13,10 @@ Install the package and system management tools
 
 Finally, to finish the setup run:
 
-`bash
+```bash
 $ brew bundle
 $ nix --extra-experimental-features "nix-command flakes" run nix-darwin/master#darwin-rebuild -- switch --flake .#mac
-`
+```
 
 after that nix command runs you should be able to reload with:
 
