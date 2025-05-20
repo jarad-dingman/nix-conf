@@ -10,6 +10,8 @@
     find = "fd";
   };
 
+  profileExtra = ''export GPG_TTY=$(tty)'';
+
   autosuggestion.enable     = true;
   syntaxHighlighting.enable = true;
 }
