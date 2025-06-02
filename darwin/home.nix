@@ -9,8 +9,11 @@
     stateVersion  = "24.05";
 
     packages = with pkgs; [
-      gum curl glow nixd nmap procs devenv
-      imagemagick dnsutils tealdeer
+      gum curl glow nixd nmap procs awscli
+      devenv imagemagick dnsutils tealdeer
+
+      # Academy related stuff
+      gnused gettext
 
       nerd-fonts.zed-mono
       nerd-fonts.fira-code

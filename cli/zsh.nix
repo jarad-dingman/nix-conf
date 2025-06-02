@@ -10,7 +10,10 @@
     find = "fd";
   };
 
-  profileExtra = ''export GPG_TTY=$(tty)'';
+  profileExtra = ''
+    export GPG_TTY=$(tty)
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+  '';
 
   autosuggestion.enable     = true;
   syntaxHighlighting.enable = true;

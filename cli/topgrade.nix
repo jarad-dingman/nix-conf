@@ -8,6 +8,8 @@
       disable = [
         "flutter"
         "node"
+        "ruby_gems"
+        "gem"
         # "brew_cask"
         # "brew_formula"
       ];
