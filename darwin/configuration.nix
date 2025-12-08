@@ -2,9 +2,6 @@
 
 {
   security.pam.services.sudo_local.touchIdAuth = true;
-  security.pki.certificates = [
-    "/opt/nix-and-zscaler.crt"
-  ];
 
   imports = [ ./settings.nix];
 
@@ -35,7 +32,6 @@
       interval.Day = 7;
       options = "--delete-older-than 7d";
     };
-    settings.ssl-cert-file = "/opt/nix-and-zscaler.crt";
     settings.trusted-users = [
       "root"
       "jarad.dingman"

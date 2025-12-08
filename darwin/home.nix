@@ -9,9 +9,7 @@
     stateVersion  = "24.05";
 
     packages = with pkgs; [
-      devenv imagemagick dnsutils
-
-      onefetch
+      devenv imagemagick dnsutils onefetch
 
       nerd-fonts.zed-mono
       nerd-fonts.fira-code
@@ -21,9 +19,7 @@
 
   # App configurations for cli and a desktop app or two...
   programs = {
-
-    direnv    = { enable = true; };
-
+    direnv = {   enable = true; };
     home-manager.enable = true;
   };
 }
